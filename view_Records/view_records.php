@@ -7,9 +7,10 @@
 // -- Description:  This script reads data from records.csv and displays the data in a HTML table
 // ---------------
 
+include('templates/header.html');
 ini_set('auto_detect_line_endings', 1);
 
-$file = 'records.csv';
+$file = 'documents/records.csv';
 $file_handler = fopen($file, 'rb');
 
 print '<table>
@@ -26,4 +27,6 @@ while ($line = fgetcsv($file_handler, 200)) {
 }
 
 fclose($file_handler);
+
+include('templates/footer.html');
 ?>

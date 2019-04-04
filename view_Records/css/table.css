@@ -1,0 +1,32 @@
+/*--
+-------------
+Programmer:     Jack Morris
+Course:         ITSE-1306 (Intro to PHP)
+Instructor:     Cesar "Coach" Marrero
+Assignment:     Week12-Lab
+Description:    Handles formatting of table in view_records.php
+-------------
+--*/
+
+table {
+    width: 500px;
+}
+
+th, td {
+    padding: 7px 10px 10px 10px;
+}
+th {
+    text-transform: uppercase;
+    border-bottom: 2px solid #111111;
+    border-top: 1px solid #999999;
+    text-align: left;
+}
+tr.even {
+    background-color: #efefef;
+}
+tr:hover {
+    background-color: #c3e6e5;
+}
+.money {
+    text-align: right;
+}
